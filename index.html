@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Masjid Connect</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+        :root {
+          /* Colors from your app's stylesheet */
+          --primary: #4A8B8B;
+          --secondary: #E8A298;
+          --background: #FEFCF8;
+          --surface: #F0F7F7;
+          --text-main: #2c2a29;
+          --subtle-text: #5c5a57;
+          --border-color: #d6e0e0;
+
+          /* Spacing */
+          --space-sm: 0.75rem;
+          --space-md: 1rem;
+          --space-lg: 1.25rem;
+          --space-xl: 1.5rem;
+          --space-xxl: 2rem;
+          
+          /* Radius */
+          --radius-md: 0.75rem;
+          --radius-lg: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            background-color: var(--background);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--space-xxl) var(--space-lg);
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: left;
+            gap: var(--space-md);
+            margin-bottom: var(--space-xxl);
+        }
+
+        .header h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1rem;
+            color: var(--subtle-text);
+            margin-top: var(--space-sm);
+        }
+
+        .back-button {
+            background-color: var(--surface);
+            color: var(--primary);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #e0eaea;
+        }
+
+        .detail-header-text {
+            flex-grow: 1;
+        }
+
+        .content-card {
+            background-color: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xxl);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+        }
+        
+        .content-card h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-top: var(--space-xl);
+            margin-bottom: var(--space-md);
+            padding-bottom: var(--space-sm);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .content-card h2:first-of-type {
+            margin-top: 0;
+        }
+        
+        .content-card p {
+            color: var(--subtle-text);
+            margin-bottom: var(--space-md);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: var(--space-xl);
+            margin-bottom: var(--space-md);
+        }
+
+        .primary-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background-color: var(--primary);
+            color: #fff;
+            padding: var(--space-sm) var(--space-xl);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .primary-button:hover {
+            background-color: #3a7a7a; /* A slightly darker shade of primary */
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: var(--space-xxl);
+            font-size: 0.875rem;
+            color: var(--subtle-text);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <header class="header">
+            <a href="https://masjidconnect.ovh" class="back-button" aria-label="Go back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+            </a>
+            <div class="detail-header-text">
+                <h1>About Masjid Connect</h1>
+                <p>Connecting communities, one masjid at a time.</p>
+            </div>
+        </header>
+
+        <main class="content-card">
+            <h2>Our Purpose</h2>
+            <p>Masjid Connect was created with a simple goal: to make it easier for individuals to find masjids and access accurate prayer times, wherever they are. We believe that technology can serve our communities by providing essential information in a clean, accessible, and user-friendly format.</p>
+            
+            <h2>A Community-Driven Platform</h2>
+            <p>The strength of Masjid Connect lies in its community. All the data you see in the app—from masjid names and locations to prayer schedules and facility details—is contributed and updated by users like you. This crowdsourced approach ensures that our information remains relevant, timely, and reflective of the local communities we serve.</p>
+            <p>We are immensely grateful for our top contributors and every user who takes a moment to share or correct information. Your efforts help thousands of others.</p>
+
+            <h2>Our Commitment</h2>
+            <p>We are committed to providing a reliable and respectful platform. While we rely on our community for data, we are continuously working on tools and features to improve data accuracy and make the contribution process as seamless as possible.</p>
+            
+            <div class="button-container">
+                <a href="https://masjidconnect.ovh" target="_blank" rel="noopener noreferrer" class="primary-button">
+                    <span>Visit <strong>Masjid Connect App</strong> here</span>                    
+                </a>
+            </div>
+            
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2025 Masjid Connect. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+
+
+
