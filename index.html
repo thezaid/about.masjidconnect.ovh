@@ -16,6 +16,7 @@
           --text-main: #2c2a29;
           --subtle-text: #5c5a57;
           --border-color: #d6e0e0;
+          --primary-t: rgba(74, 139, 139, 0.1);
 
           /* Spacing */
           --space-sm: 0.75rem;
@@ -140,7 +141,33 @@
 
         .primary-button:hover {
             background-color: #3a7a7a; /* A slightly darker shade of primary */
-            transform: translateY(-2px);
+            transform: translateY(-px);
+        }
+
+        .legal-links-container {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-md);
+            margin-top: var(--space-xl);
+            flex-wrap: wrap;
+        }
+
+        .legal-chip {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--surface);
+            color: var(--subtle-text);
+            padding: var(--space-sm) var(--space-md);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .legal-chip:hover {
+            background-color: var(--primary-t);
+            color: var(--primary);
         }
 
         .footer {
@@ -178,9 +205,14 @@
             <h2>Our Commitment</h2>
             <p>We are committed to providing a reliable and respectful platform. While we rely on our community for data, we are continuously working on tools and features to improve data accuracy and make the contribution process as seamless as possible.</p>
             
+            <div class="legal-links-container">
+                <a href="/privacy.html" class="legal-chip">Privacy Policy</a>
+                <a href="/terms.html" class="legal-chip">Terms of Use</a>
+            </div>
+
             <div class="button-container">
                 <a href="https://masjidconnect.ovh" target="_blank" rel="noopener noreferrer" class="primary-button">
-                    <span>Visit <strong>Masjid Connect App</strong> here</span>                    
+                    <span>Visit <strong>Masjid Connect</strong> app here</span>
                 </a>
             </div>
             
@@ -193,6 +225,7 @@
 
 </body>
 </html>
+
 
 
 
